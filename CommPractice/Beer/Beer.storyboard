@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -16,16 +16,89 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roY-0M-nF3">
+                                <rect key="frame" x="166" y="75" width="61.333333333333343" height="28.666666666666671"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R4q-8O-GWI">
+                                <rect key="frame" x="96.666666666666686" y="139.66666666666666" width="200" height="199.99999999999997"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="0pi-ri-pzo"/>
+                                    <constraint firstAttribute="width" secondItem="R4q-8O-GWI" secondAttribute="height" multiplier="1:1" id="F0T-05-eFT"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhp-Lu-qIl">
+                                <rect key="frame" x="174.66666666666666" y="363.66666666666669" width="44" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rZ-cf-rvb">
+                                <rect key="frame" x="16" y="754" width="361" height="48"/>
+                                <color key="backgroundColor" red="0.71764707569999997" green="0.14901961389999999" blue="0.37254902719999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="vfY-MB-jh2"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="mug.fill" catalog="system" title="다른 맥주 추천받기" imagePadding="12" cornerStyle="medium">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="17"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tappedAnotherBeerButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="xoq-12-T4e"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRd-v2-6N4">
+                                <rect key="frame" x="181" y="392.66666666666669" width="31" height="15"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vee-tP-Wwx">
+                                <rect key="frame" x="40" y="455.66666666666669" width="313" height="15.666666666666686"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dhp-Lu-qIl" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="1ak-bC-8UF"/>
+                            <constraint firstItem="MRd-v2-6N4" firstAttribute="top" secondItem="dhp-Lu-qIl" secondAttribute="bottom" constant="8" id="1ly-37-6GW"/>
+                            <constraint firstItem="Vee-tP-Wwx" firstAttribute="top" secondItem="MRd-v2-6N4" secondAttribute="bottom" constant="48" id="ECz-dU-N2k"/>
+                            <constraint firstItem="Vee-tP-Wwx" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="Hla-gH-uxg"/>
+                            <constraint firstItem="1rZ-cf-rvb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="JJX-yr-H5E"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Vee-tP-Wwx" secondAttribute="trailing" constant="40" id="Kqb-3U-GJz"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="1rZ-cf-rvb" secondAttribute="bottom" constant="16" id="N3q-Eu-2WQ"/>
+                            <constraint firstItem="roY-0M-nF3" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="Nk2-tw-HaN"/>
+                            <constraint firstItem="R4q-8O-GWI" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="P5y-zW-3RV"/>
+                            <constraint firstItem="Vee-tP-Wwx" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="aUu-84-2mc"/>
+                            <constraint firstItem="R4q-8O-GWI" firstAttribute="top" secondItem="roY-0M-nF3" secondAttribute="bottom" constant="36" id="clS-ud-TdE"/>
+                            <constraint firstItem="roY-0M-nF3" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="e9k-ER-rN9"/>
+                            <constraint firstItem="dhp-Lu-qIl" firstAttribute="top" secondItem="R4q-8O-GWI" secondAttribute="bottom" constant="24" id="gyu-if-mJn"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="1rZ-cf-rvb" secondAttribute="trailing" constant="16" id="tdS-8h-XdD"/>
+                            <constraint firstItem="MRd-v2-6N4" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="yn7-Dn-7sz"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="beerImageView" destination="R4q-8O-GWI" id="poJ-3b-MIc"/>
+                        <outlet property="beerNameLabel" destination="dhp-Lu-qIl" id="s3m-aT-wfe"/>
+                        <outlet property="descriptionLabel" destination="Vee-tP-Wwx" id="vvY-l3-BJN"/>
+                        <outlet property="headerLabel" destination="roY-0M-nF3" id="xD5-Rc-d7T"/>
+                        <outlet property="tagLabel" destination="MRd-v2-6N4" id="Gs2-Ww-luJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="48" y="-2"/>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
         </scene>
     </scenes>
     <resources>
+        <image name="mug.fill" catalog="system" width="128" height="125"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
