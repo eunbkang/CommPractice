@@ -10,6 +10,7 @@ import Alamofire
 import SwiftyJSON
 
 class BeerViewController: UIViewController {
+    static let identifier = "BeerViewController"
 
     @IBOutlet var headerLabel: UILabel!
     @IBOutlet var beerImageView: UIImageView!

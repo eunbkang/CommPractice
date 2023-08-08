@@ -22,6 +22,8 @@
 		7EA0A86B2A82220D00CD10ED /* Lotto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA0A86A2A82220D00CD10ED /* Lotto.swift */; };
 		7EA0A86D2A823AC500CD10ED /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA0A86C2A823AC500CD10ED /* Beer.swift */; };
 		7EA0A8702A823F1100CD10ED /* Extension+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA0A86F2A823F1100CD10ED /* Extension+UIImageView.swift */; };
+		7EA0A8722A824BD200CD10ED /* BeerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA0A8712A824BD200CD10ED /* BeerListViewController.swift */; };
+		7EA0A8742A824EFC00CD10ED /* BeerListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA0A8732A824EFC00CD10ED /* BeerListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		7EA0A86A2A82220D00CD10ED /* Lotto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lotto.swift; sourceTree = "<group>"; };
 		7EA0A86C2A823AC500CD10ED /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		7EA0A86F2A823F1100CD10ED /* Extension+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImageView.swift"; sourceTree = "<group>"; };
+		7EA0A8712A824BD200CD10ED /* BeerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewController.swift; sourceTree = "<group>"; };
+		7EA0A8732A824EFC00CD10ED /* BeerListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 				7EA0A8602A82155D00CD10ED /* Beer.storyboard */,
 				7EA0A8622A82156A00CD10ED /* BeerViewController.swift */,
 				7EA0A86C2A823AC500CD10ED /* Beer.swift */,
+				7EA0A8712A824BD200CD10ED /* BeerListViewController.swift */,
+				7EA0A8732A824EFC00CD10ED /* BeerListTableViewCell.swift */,
 			);
 			path = Beer;
 			sourceTree = "<group>";
@@ -198,8 +204,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EA0A86B2A82220D00CD10ED /* Lotto.swift in Sources */,
+				7EA0A8742A824EFC00CD10ED /* BeerListTableViewCell.swift in Sources */,
 				7EA0A8632A82156A00CD10ED /* BeerViewController.swift in Sources */,
 				7EA0A8702A823F1100CD10ED /* Extension+UIImageView.swift in Sources */,
+				7EA0A8722A824BD200CD10ED /* BeerListViewController.swift in Sources */,
 				7EA0A85E2A82154A00CD10ED /* LotteryViewController.swift in Sources */,
 				7EA0A84B2A82150100CD10ED /* ViewController.swift in Sources */,
 				7EA0A8472A82150100CD10ED /* AppDelegate.swift in Sources */,
