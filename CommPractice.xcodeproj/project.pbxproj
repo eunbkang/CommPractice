@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E8726882AB1E244000BF9A7 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8726872AB1E244000BF9A7 /* APIService.swift */; };
+		7E87268A2AB1EC00000BF9A7 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8726892AB1EC00000BF9A7 /* Observable.swift */; };
+		7E87268C2AB1EDFE000BF9A7 /* LottoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E87268B2AB1EDFE000BF9A7 /* LottoViewModel.swift */; };
 		7EA0A8472A82150100CD10ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA0A8462A82150100CD10ED /* AppDelegate.swift */; };
 		7EA0A8492A82150100CD10ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA0A8482A82150100CD10ED /* SceneDelegate.swift */; };
 		7EA0A84B2A82150100CD10ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA0A84A2A82150100CD10ED /* ViewController.swift */; };
@@ -27,6 +30,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E8726872AB1E244000BF9A7 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		7E8726892AB1EC00000BF9A7 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		7E87268B2AB1EDFE000BF9A7 /* LottoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoViewModel.swift; sourceTree = "<group>"; };
 		7EA0A8432A82150100CD10ED /* CommPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EA0A8462A82150100CD10ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EA0A8482A82150100CD10ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +65,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E8726862AB1E22E000BF9A7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7E8726872AB1E244000BF9A7 /* APIService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		7EA0A83A2A82150100CD10ED = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +92,7 @@
 		7EA0A8452A82150100CD10ED /* CommPractice */ = {
 			isa = PBXGroup;
 			children = (
+				7E8726862AB1E22E000BF9A7 /* Network */,
 				7EA0A86E2A823F0000CD10ED /* Utility */,
 				7EA0A85F2A82154F00CD10ED /* Beer */,
 				7EA0A85C2A82153A00CD10ED /* Lottery */,
@@ -98,6 +113,8 @@
 				7EA0A85A2A82152D00CD10ED /* Lottery.storyboard */,
 				7EA0A85D2A82154A00CD10ED /* LotteryViewController.swift */,
 				7EA0A86A2A82220D00CD10ED /* Lotto.swift */,
+				7E8726892AB1EC00000BF9A7 /* Observable.swift */,
+				7E87268B2AB1EDFE000BF9A7 /* LottoViewModel.swift */,
 			);
 			path = Lottery;
 			sourceTree = "<group>";
@@ -207,9 +224,12 @@
 				7EA0A8742A824EFC00CD10ED /* BeerListTableViewCell.swift in Sources */,
 				7EA0A8632A82156A00CD10ED /* BeerViewController.swift in Sources */,
 				7EA0A8702A823F1100CD10ED /* Extension+UIImageView.swift in Sources */,
+				7E87268A2AB1EC00000BF9A7 /* Observable.swift in Sources */,
+				7E8726882AB1E244000BF9A7 /* APIService.swift in Sources */,
 				7EA0A8722A824BD200CD10ED /* BeerListViewController.swift in Sources */,
 				7EA0A85E2A82154A00CD10ED /* LotteryViewController.swift in Sources */,
 				7EA0A84B2A82150100CD10ED /* ViewController.swift in Sources */,
+				7E87268C2AB1EDFE000BF9A7 /* LottoViewModel.swift in Sources */,
 				7EA0A8472A82150100CD10ED /* AppDelegate.swift in Sources */,
 				7EA0A86D2A823AC500CD10ED /* Beer.swift in Sources */,
 				7EA0A8492A82150100CD10ED /* SceneDelegate.swift in Sources */,

@@ -7,8 +7,14 @@
 
 import Foundation
 
-struct Lotto {
+struct Lotto: Codable {
     var round: Int
     var date: String
-    var numbers: [Int]
+    var drwtNo1, drwtNo2, drwtNo3, drwtNo4, drwtNo5, drwtNo6, bnusNo: Int
+    
+    enum CodingKeys: String, CodingKey {
+        case date = "drwNoDate"
+        case round = "drwNo"
+        case drwtNo1, drwtNo2, drwtNo3, drwtNo4, drwtNo5, drwtNo6, bnusNo
+    }
 }
